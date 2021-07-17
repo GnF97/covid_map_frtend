@@ -1,0 +1,10 @@
+{% extends "County/layout.html" %}
+{% block body%}
+<h1>Counties</h1>
+<ul>
+    {% for C in Counties %}
+        <li>{{C.idc}}'s today total count is {{C.patient_count}}</li>
+    {% endfor %}
+</ul>
+<h3> Sumup : {{Sumup}}</h3>
+{% endblock %}
