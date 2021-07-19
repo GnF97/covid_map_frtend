@@ -18,5 +18,6 @@ from django.urls import include,path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("covid_map/", include("covid_map.urls"))
+    path("covid_map/", include("covid_map.urls")),
+    path('users/', include("users.urls"))
 ]

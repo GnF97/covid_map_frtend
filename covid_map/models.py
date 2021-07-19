@@ -10,7 +10,7 @@ class Patient(models.Model):
         return f"{self.idp} tests positive at {self.startD}"
 
 class County(models.Model):
-    idc = models.CharField(max_length=4)
+    idc = models.CharField(max_length=10)
     # patient_count = models.ForeignKey(Patient, max_length=10,on_delete=models.CASCADE, related_name="level")
     patient_count = models.IntegerField(max_length=10)
 
